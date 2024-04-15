@@ -1,44 +1,89 @@
-/* Define colors */
-:root {
-    --primary-color: #336699; /* main color */
-    --secondary-color: #FF9900; /* secondary color */
-  }
-  
-  /* Apply font and text properties */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333; /* default text color */
-  }
-  
-  h1, h2 {
-    color: var(--primary-color);
-  }
-  
-  p {
-    color: #666; /* text color for paragraphs */
-  }
-  
-  /* Add ID's and classes */
-  header {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  #spartan-kirk {
-    font-weight: bold;
-  }
-  
-  .college-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-    header {
-      padding: 10px;
-    }
-  }
-  
+/* Styles for the entire page */
+body {
+  font-family: 'Arial', sans-serif; /* Setting font family */
+  background-color: #0A0A23; /* Background color */
+  color: #FFFFFF; /* Text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the header */
+header {
+  background-color: #13274F; /* Background color */
+  color: #FFFFFF; /* Text color */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Styles for sections */
+section {
+  padding: 20px;
+  border-bottom: 2px solid #F1C40F; /* Bottom border */
+}
+
+/* Margin for section elements */
+.introduction, .early-career, .nfl-career, .achievements {
+  margin-bottom: 20px;
+}
+
+/* Styles for headings */
+h1, h2 {
+  color: #F1C40F; /* Text color */
+}
+
+/* Styles for paragraphs and list items */
+p, li {
+  color: #CCCCCC; /* Text color */
+  line-height: 1.6; /* Line height */
+}
+
+/* Styles for unordered lists */
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+/* Custom bullet point for list items */
+li::before {
+  content: "⚡"; /* Custom bullet */
+  color: #F1C40F; /* Bullet color */
+  margin-right: 8px;
+}
+
+/* Highlighted text */
+.highlight {
+  color: #F1C40F; /* Text color */
+  font-weight: bold; /* Bold text */
+}
+
+/* Styles for images */
+img {
+  max-width: 100%; /* Maximum width */
+  height: auto; /* Automatic height */
+  display: block; /* Display as block element */
+  margin: 20px 0; /* Margin */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: center;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #ddd; /* Change the background color as needed */
+  color: black;
+}
+
