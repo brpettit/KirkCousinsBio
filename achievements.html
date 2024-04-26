@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1CZGQVS6PZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CZGQVS6PZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-1CZGQVS6PZ');
-</script>
+      gtag('config', 'G-1CZGQVS6PZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the success story of Kirk Cousins, from his journey in high school to becoming a prominent NFL player.">
@@ -17,6 +17,14 @@
     <meta name="author" content="Ben Pettit">
     <title>Kirk's Success</title>
     <link rel="stylesheet" href="mystyle2.css">
+    <script>
+        function shareOnTwitter() {
+            const urlToShare = 'https://www.kirkandjuliefoundation.org'; // Provided URL
+            const textToShare = "Check out the Kirk and Julie Foundation's website!"; // Adjusted message
+            const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(urlToShare)}&text=${encodeURIComponent(textToShare)}`;
+            window.open(twitterShareUrl, 'Share on Twitter', 'width=600,height=400');
+        }
+    </script>
 </head>
 <body>
 
@@ -28,9 +36,9 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="stats.html">Career Stats</a></li>
             </ul>
-
         </nav>
     </header>
+
     <h1> Spartan Kirk </h1>
         <p>Kirk Cousins was always the guy that could get things done. From high school, to college, to the NFL, he worked his hardest to become a student and true athlete of the game he loved.</p>
         <img src="Kirk Cousins College.jpg" alt="Kirk Cousins College">
@@ -49,5 +57,7 @@
         <p>Overall, Kirk Cousins' tenure in the NFL exemplified his dedication, work ethic, and passion for the game of football. He left a lasting legacy as a respected leader and accomplished quarterback, inspiring future generations of athletes.</p>
         
     <img src="Kirk Cousins NFL.jpg" alt="Kirk Cousins">
+
+    <button onclick="shareOnTwitter()">Share on Twitter</button>
 </body>
 </html>
